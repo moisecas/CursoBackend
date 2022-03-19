@@ -2,9 +2,11 @@
 class cliente { //creacion
     constructor(nombre,fecha,direccion) { //contenido
         this.nombre=nombre; //this, paralabra reservada para asignar los parametros del constructor
-        this.fechaNacimiento=fecha;
+        this.fechaNacimiento=fecha; //atributos de la instancia 
         this.direccion=direccion; 
     }
+    
+
     verStringPresentacion(){
         return `nombre: ${this.nombre}`
     }

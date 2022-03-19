@@ -9,7 +9,13 @@ class usuario { //creacion
        
     }
     verUsuario(){
-        return `nombres: ${this.nombre}` + `apellidos: ${this.apellido}` 
+        return `nombres: ${this.nombre} ${this.apellido}` 
+    }
+    verBookNombre(){
+        return `Libro: ${this.libro} ${this.nombre}` 
+    }
+    countArray(){
+        return this.mascota.length  
     }
     set addMascota(pet){
         this.mascota=pet; 
@@ -22,9 +28,12 @@ class usuario { //creacion
 }
 const usuario1=new usuario("moises", "castro","the book", "aves") //le damos datos a la clase según sus keys del contenido
 usuario1.addMascota = ["gato","aves"] 
-usuario1.retornaMascota 
+usuario1.retornaMascota
+
 console.log(usuario1)
 console.log(usuario1.verUsuario()) 
+console.log(usuario1.verBookNombre()) 
+console.log(usuario1.countArray()) 
 
  
 
