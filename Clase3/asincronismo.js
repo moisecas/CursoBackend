@@ -9,3 +9,4 @@ function hacerAlgoTresVeces(algo){
 
 //funciones anonimas 
 hacerAlgoTresVeces(function(){console.log("hola")}) //me muestra 3 veces hola 
+

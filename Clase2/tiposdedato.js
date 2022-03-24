@@ -46,7 +46,7 @@ function cuentaDoble (num1,num2,operacion) { //operacion es una función
 console.log(cuentaDoble(2,3, sumar)) 
 
 function crearMultiplicador(multip){ //una función que cree otra función
-    return function (n){
+    return function (n){ //función haya guardado el valor de multip
         return multip*n
     }
 }
@@ -56,4 +56,5 @@ const triple = crearMultiplicador(3) //rehusar codigo
 
 console.log(doble(2))
 console.log(triple(2))
+
 
