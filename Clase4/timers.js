@@ -4,7 +4,7 @@
 
 //setInterval parecido al setTimeout
 
-// let i = 0
+let i = 0
 // const timer = setInterval (()=> {
 //     console.log(i++)
 //     if (i>10){
@@ -12,9 +12,11 @@
 //     }
 // }, 500) //cuando la variable llega a 10 limpie el intervalo 
 
-let i = 0
+
 const timer = setTimeout (()=> {
     console.log("salgo de viaje")
     
     
 }, 10_000) //espera 10 seg y me muestra el console.log 
+
+//escenario: conectado a la base de datos pero tiene un setTimeout, intentar reconectarme cada cierto tiempo
