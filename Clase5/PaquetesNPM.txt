@@ -1,0 +1,10 @@
+Para inicio npm init para crear el package.json  
+Crear archivo main.js 
+Un modulo es un conjunto de funciones y objetos de js que las aplicaciones externas pueden usar 
+Node js posee varios módulos incorporados (nativos) compilados en binario. Estos módulos basicos estan definidos en el codigo fuente de Node
+carpeta lib/ 
+Modulos externos: no son partes del nodo
+Necesitamos un admnistrador de paquetes: listar los modulos disponibles, instalar modulo disponible en el programa, instalar o actualizar 
+
+Se instala de forma global las librerias utilitarias que sirve para testing en la etapa de desarrollo, por lo general y casi siempre las libreráis 
+se instalan de forma local, en el proyecto. 
