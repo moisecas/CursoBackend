@@ -35,15 +35,15 @@ fs.watchFile('prueba.txt', 'probando...'. repeat(3_000))
 console.log(10+10) 
 
 //async, delegado al sistema operativo 
-async function trabajarConArchivos(){
+async function trabajarConArchivos() {
     try {
-        await fs.promises.writeFileSync('prueba.txt', 'probando...'. repeat(3_000)) //cree
-        const result = await fs.promises.readFile('prueba.txt', 'utf-8')//lea
-        console.log(result) //muestre
-    }catch(error){ //capture error
+        await fs.promises.writeFile('prueba.txt', 'probando...'.repeat(30))
+        const datos = await fs.promises.readFile('prueba.txt', 'utf-8')
+        console.log(datos)
+    } catch (error) {
         console.log(error)
-    }finally { //termine el proceso 
-        console.log('termine')
+    } finally {
+        console.log('terminé')
     }
 }
 

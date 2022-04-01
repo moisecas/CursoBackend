@@ -8,3 +8,18 @@ Necesitamos un admnistrador de paquetes: listar los modulos disponibles, instala
 
 Se instala de forma global las librerias utilitarias que sirve para testing en la etapa de desarrollo, por lo general y casi siempre las libreráis 
 se instalan de forma local, en el proyecto. 
+
+Para la instalación: 
+npm install -g nombre-libreria //global
+npm install  nombre-libreria //local 
+
+cada librería que se instale tiene su documentación en https://www.npmjs.com/
+
+eror común: cannot find module 'console-log-colors' Puede ser que se haya olvidado instalar una librería o se haya borrado de node modules
+en ese caso se actualiza la librería o se vuelve a instalar (en ese caso lo que falla posiblemente es el require al importar la librería) 
+
+para que funcione el fetch hay que instalar node-fetch en node
+
+Manejo automatizado de dependencias: con el comando npm install actualizamos y mantenemos de forma fácil y segura las dependeicas del proyecto
+Si es un dependencia en desarrollo le agregamos npm install -D	--save-dev	Instala el paquete en el proyecto, como dependencia de desarrollo. npm install -D	--save-dev
+bcrypt encriptación librería 
