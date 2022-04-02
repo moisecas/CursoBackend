@@ -6,8 +6,8 @@ const http = require('http')
 const server = http.createServer((peticion, respuesta) => {
     // console.log('llegó un evento!')
     // console.log(peticion)
-    const { url: ruta } = peticion //url para interactuar con el servidor 
-    switch (ruta) {
+    const { url: ruta } = peticion //url para interactuar con el servidor, cliente http capaz de enviar mensaje 
+    switch (ruta) { //ext para vs code recomendada para simular peticiones, thunder client
         case '/llegada':
             respuesta.end('Hola mundo')
             break
