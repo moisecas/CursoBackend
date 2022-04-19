@@ -1,0 +1,23 @@
+Clase 7 backend
+Interfaz programatica de la aplicación 
+Tenemos un servidor con su api, rutas y operaciones que se pueden consumir de ese servidor 
+Protocolo http, mensajería intercambio entre cliente servidor, comunicación entre internet
+Conjunto de reglas que se están intercambiando entre las dos partes
+El servidor es quien atiende esas preguntas o peticiones, el cliente pregunta, el servidor responde. La forma en que se comunican con el servidor
+es cumpliendo el Protocolo http. 
+Servidor que me devuelve una página web 
+cada respuesta de http tiene un código de estado numerico https://http.cat/
+Conceptos de api, rest y api rest 
+
+Rest: transferencia de estado representacional, modelo o estructura con lo que representamos algo. Datos contenido en esa estructura. 
+Intercambio entre el cliente y el servidor de esa entidad en forma de mensaje. Los dos formatos mas usados para transferencia de datos son xml y json
+
+Api: conjunto de funcionalidad que pueden ser consumida de un servidor 
+
+Api rest: tipo de api que no dispone de interfaz gráfica: arquitectura cliente servidor sin estado, cacheable, operaciones comunes, interfaz uniforme, utilización de hipermedios
+sin estado o stalees(el servidor no va a utilizar la memoria para persistir información más allá del manejo de una petición, no guarda nada en memoria ram)
+cacheable, almecenamiento para acceso rápido, almacenamiento a ciertos contenidos, su tamaño es reducido, guarda pocas cosas, asegurarnos que cualquier pedido sea facilmente cacheable
+interfaz uniforme, cada recurso del servidor tiene que poder accederse por medio de una url única 
+operaciones comunes, utilizan como forma de obtener la información el protocolo http, pueden ser el método de la petición 
+metodos: post(creo recurso), get(tomo recurso), put(colocar algo en una posición en particular), delete (borro recurso) 
+utilización de hipermedios, vinculo o link a un recurso o a una consulta 

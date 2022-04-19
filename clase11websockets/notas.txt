@@ -1,0 +1,23 @@
+Protocolo de red basado en tcp 
+Conexiones bidirenccionales, se intercambian datos en ambas direcciones 
+La ventaja de usar websocket es ingresar a los datos rapidamente 
+El servidor puede activarse por si mismo 
+
+USOS: chats, tickers, actualizaciones de bolsa en directo. 
+
+Lo necesitamos porque el protocolo http no alcanza
+
+websocket crea conexiones bidireccionales que permiten el intercambio de datos en ambos sentidos, lo cual hace posible el contacto
+directo con el navegador. 
+En cuanto se envía un mensaje por un chat de soporte se muestra directamente al otro lado. Socket del chat, todo pasa por ahí e intercambia
+los datos entre el receptor y emisor. Los usuarios deben poder enviar mensajes al servidor y el servidor tiene que poder enviar mensajes
+
+http, funciona como un walkie talkie y websockets es un canal abierto entre cliente servidor como una llamada  telefonica 
+
+Es importante que websockets no sustituye http ni vicebersa, son para funciones diferentes 
+
+*Socket io
+Tiene dos partes, una biblioteca del lado del cliente que se ejecuta en el navegador, una biblioteca del lado del 
+servidor 
+una biblioteca del lado del servidor para node js
+Caracteristicas: fiabilidad, soporte de reconexión automatica, detención de desconexión, soporte binario
