@@ -1,0 +1,2 @@
+Acá deben estar las crendicales
+en el .gitignore, agregamos este archivo de crendicales 
