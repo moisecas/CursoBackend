@@ -1,0 +1,14 @@
+cookies de lado del servidor
+
+-Mecanismo para almacenar un tipo de dato 
+-Nos presta parte de su almacenamiento, forma de ahorrar espacio 
+-Cada usuario tiene guardada su información con la que se esta conectando al servidor 
+-El servidor recibe junto a esa petición la información que hace de su comportamiento en la conexión 
+-Se usa para no volver a consultar constantemente la misma información del cliente, consultamos 
+el paquete de datos que viene junto con la respuesta 
+-Decirle a cada usuario que guarde su información y cada vez que venga a solicitar info al server me adjunte ese paquete 
+-Atributos: Tiempo de vida(cuanto tiempo va a guardar el navegador esa información), datos no codificados, quedan guardados en el navegador de 
+forma comprensible, se deben encriptar, accediendo a las cookies de otros programas podría obtener la información. 
+-Se requiere un controlador para trabajar con las cookies 
+-  npm i cookie-parser 
+
